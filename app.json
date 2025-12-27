@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "price-widget-app",
+    "slug": "price-widget-app",
+    "version": "1.0.0",
+    "scheme": "pricewidgetapp",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/widget-preview/hello_original.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/widget-preview/hello_original.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.niki.pricewidgetapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "Price",
+              "label": "My Price Widget",
+              "minWidth": "180dp",
+              "minHeight": "100dp",
+              "targetCellWidth": 3,
+              "targetCellHeight": 2,
+              "description": "This is my price widget",
+              "previewImage": "./assets/widget-preview/hello.png",
+              "updatePeriodMillis": 1800000,
+              "resizeMode": "horizontal|vertical"
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}
