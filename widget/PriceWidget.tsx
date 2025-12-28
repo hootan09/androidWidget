@@ -41,7 +41,7 @@ export function PriceWidget({priceList = utils.tmpData}:any) {
                         style={{ height: iconSize, width: iconSize }}
                     />
                     <TextWidget
-                        text={`${item?.price_usd && '$' + item.price_usd + '  |'}  IRT ${item.price_rls}`}
+                        text={`${item?.price_usd ? '$' + item.price_usd + '  |  ' : ''}IRT ${item.price_rls}`}
                         style={{
                             fontSize: 12,
                             color: "#000",
